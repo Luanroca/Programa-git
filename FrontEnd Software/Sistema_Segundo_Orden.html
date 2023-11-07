@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sistema de Segundo Orden</title>
+    <link href="sistemasegundoorden.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+      <ul>
+        <li><a href="Pagina_Principal.html">Pagina Principal</a></li>  
+        <li><a href="Registro_Lazos.html">Registro de Lazos</a></li>
+        <li><a href="Revision_Elemento_Primario.html">Revision Elemento Primario</a></li>
+        <li><a href="Revision_Controlador.html">Revision Controlador</a></li>
+        <li><a href="Revision_Elemento_Final.html">Revision Elemento Final</a></li>
+        <li><a href= "Sintonia_Lazos.html">Sintonia de Lazos</a></li>
+        <li><a href= "Generar_Reportes.html">Generacion de Reportes</a></li>
+        <li><a href="Ayuda.html">Ayuda</a></li>
+      </ul>
+      <form>
+          <div id="header">
+            <img src="Iguana.png" alt="Logo">
+            <h1>Sistema Informatico de Sintonia de Lazos de Control PID</h1>
+            <h1>SISILPID</h1>
+            <h2>Sintonia de Lazos</h2>
+        </div>   
+        <div class= "identificacion">
+            <h3>DEFINIR EL PROCESO</h3><br>
+            <a href="Sistema_Primer_Orden.html" class="button">Sistema de Primer Orden</a>
+            <a href="Sistema_Segundo_Orden.html" class="button">Sistema de Segundo Orden</a>
+            <a href="Sistema_Integrante.html" class="button">Sistema Integrante</a>
+          </div><br>
+        <div class="controlador">
+            <h3>TIPO DE CONTROLADOR</h3><br>
+            <a href="PI.html" class="button">PI</a>
+            <a href="PID.html" class="button">PID</a>
+          </div><br><br>
+            <h3>SISTEMA DE SEGUNDO ORDEN</h3>
+            <div id="content">
+            <div id="left-column">
+                <img src="SistemaSegundoOrden.png" alt="Otra imagen">
+            </div>
+            <div id="right-column">
+                <h4>Parametros de Escala</h4>
+                <input type="text" id="" name="cv0" placeholder="CV al 0%" required><br>
+                <input type="text" id="cv100" name="cv100" placeholder="CV al 100%" required><br>
+                <input type="text" id="mv0" name="mv0" placeholder="MV al 0%" required><br>
+                <input type="text" id="mv100" name="mv100" placeholder="MV al 100%" required><br>      
+                <h4>Ganancia del Proceso</h4>
+                <input type="text" id="deltCV" name="deltaCV" placeholder="Delta CV" required><br>
+                <input type="text" id="deltaMV" name="deltaMV" placeholder="Delta MV" required><br>
+                <input type="text" id="KP" name="KP" placeholder="Ganancia del Proceso"><br>
+                <h4>Dinamica del Proceso</h4>
+                <input type="text" id="constantetiempo1" placeholder="Constante de Tiempo (T1)" required><br>
+                <input type="text" id="constantetiempo2" placeholder="Constante de Tiempo (T2)" required><br>
+                <label for="tiempomuerto">Tiempo Muerto:</label>
+                <input type="text" id="tiempomuerto" placeholder="Tiempo Muerto" required><br>
+            </div>
+          </div>    
+          </form>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

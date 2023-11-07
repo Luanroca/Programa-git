@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    text-align: center;
+    background-color: greenyellow;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: limegreen;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: green;
+}
+#header {
+        text-align: center;
+        padding: 20px;
+        background-color: greenyellow;
+        color: darkgreen;
+        }
+form{
+    background-color: greenyellow;
+    width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    color: darkgreen;
+}
+h3{
+    color:green;
+    text-align: center;
+}
+h4{
+    color: green;
+    text-align: center;
+}
+.button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    width:100%;
+    max-width: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+th, td{
+    padding:8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+tr:last-child td{
+    border-bottom: none;
+}
+.scroll-container{
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+    align-items: center;
+    align-content: center;
+}
+.scroll-content{
+    width: 200px;
+    align-content: center;
+    align-items: center;  
+}
+.input-label{
+    margin-top: 20px;
+    align-content: center;
+    align-items: center;
+}
+.output-label{
+    margin-top: 20px;
+    align-content: center;
+    align-items: center;   
+}
+.output-text{
+    width: 100%
+    max-width: 400px;
+    padding: 8px;
+    font-size:16px;
+    border:1px solid #ddd;
+    text-align: center;
+}

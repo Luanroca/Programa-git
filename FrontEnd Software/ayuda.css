@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    text-align: center;
+    background-color: greenyellow;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: limegreen;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: green;   
+}
+h2{
+    margin-top: 0;
+    text-align: center;
+    color:green;
+}
+#header {
+        text-align: center;
+        padding: 20px;
+        background-color: greenyellow;
+        color: darkgreen;
+        }
+.contacto-info{
+    width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: greenyellow;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    color: darkgreen;
+}
+.download-link{
+    display: block;
+    margin-bottom: 0;
+    text-align: center;
+    color:blue;
+    text-decoration: underline;
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Generar Reportes</title>
+    <link href="generarreportes.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+      <ul>
+        <li><a href="Pagina_Principal.html">Pagina Principal</a></li>
+        <li><a href="Registro_Lazos.html">Registro de Lazos</a></li>
+        <li><a href="Revision_Elemento_Primario.html">Revision Elemento Primario</a></li>
+        <li><a href="Revision_Controlador.html">Revision Controlador</a></li>
+        <li><a href="Revision_Elemento_Final.html">Revision Elemento Final</a></li>
+        <li><a href= "Sintonia_Lazos.html">Sintonia de Lazos</a></li>
+        <li><a href= "Generar_Reportes.html">Generacion de Reportes</a></li>
+        <li><a href="Ayuda.html">Ayuda</a></li>
+      </ul>
+      <form>
+          <div id="header">
+            <img src="Iguana.png" alt="Logo">
+            <h1>Sistema Informatico de Sintonia de Lazos de Control PID</h1>
+            <h1>SISILPID</h1>
+            <h2>Generación de Reportes</h2>
+        </div>
+          <input type="date" id="fecha-inicial" placeholder="Fecha Inicial"><br>
+          <input type="date" id="fecha-final" placeholder="Fecha Final"><br><br>
+          <label for="Planta">Planta:</label>
+                <select id="Planta" name="Planta">
+                    <option value="Planta1">Planta 1</option>
+                    <option value="Planta2">Planta 2</option>
+                    <option value="Planta3">Planta 3</option>
+                </select><br>
+          <label for="tag">Tag del lazo:</label>
+                <select id="tag" name="tag">
+                    <option value="tag1">Tag 1</option>
+                    <option value="tag2">Tag 2</option>
+                    <option value="tag3">Tag 3</option>
+                </select><br>
+          <label for="Registro">Registro del Solicitante:</label>
+                <select id="Registro" name="Registro">
+                    <option value="Registro1">Registro 1</option>
+                    <option value="Registro2">Registro 2</option>
+                    <option value="Registro3">Registro 3</option>
+                </select><br><br><br>
+          <button type="submit">Generar Reporte</button>
+        </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

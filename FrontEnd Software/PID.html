@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PID</title>
+    <link href="PID.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+      <ul>
+        <li><a href="Pagina_Principal.html">Pagina Principal</a></li>  
+        <li><a href="Registro_Lazos.html">Registro de Lazos</a></li>
+        <li><a href="Revision_Elemento_Primario.html">Revision Elemento Primario</a></li>
+        <li><a href="Revision_Controlador.html">Registro Controlador</a></li>
+        <li><a href="Revision_Elemento_Final.html">Registro Elemento Final</a></li>
+        <li><a href= "Sintonia_Lazos.html">Sintonia de Lazos</a></li>
+        <li><a href= "Generar_Reportes.html">Generacion de Reportes</a></li>
+        <li><a href="Ayuda.html">Ayuda</a></li>
+      </ul>
+      <form>
+          <div id="header">
+            <img src="Iguana.png" alt="Logo">
+            <h1>Sistema Informatico de Sintonia de Lazos de Control PID</h1>
+            <h1>SISILPID</h1>
+            <h2>Sintonia de Lazos</h2>
+        </div>    
+        <div class= "identificacion">
+            <h3>DEFINIR EL PROCESO</h3><br>
+            <a href="Sistema_Primer_Orden.html" class="button">Sistema de Primer Orden</a>
+            <a href="Sistema_Segundo_Orden.html" class="button">Sistema de Segundo Orden</a>
+            <a href="Sistema_Integrante.html" class="button">Sistema Integrante</a>
+          </div><br><br>
+        <div class="controlador">
+            <h3>TIPO DE CONTROLADOR</h3><br>
+            <a href="PI.html" class="button">PI</a>
+            <a href="PID.html" class="button">PID</a>
+          </div><br><br>
+            <h3>Tipo Metodo de Sintonia:</h3>
+            <label for="Lambda">Lambda</label>
+            <input type="radio" id="Lambda" name="estado" value="Lambda">
+            <label for="SIMC">SIMC</label>
+            <input type="radio" id="SIMC" name="estado" value="SIMC">
+            <label for="Cohen-Coon">Cohen-Coon</label>
+            <input type="radio" id="Cohen-Coon" name="estado" value="Cohen-Coon"><br>
+                <table>
+            <h4>Calculos Controlador PID</h4>
+        <table>
+          <tr>
+              <th>Ganancia del Controlador(Kc):</th>
+              <td id="Kc">0.0</td>
+          </tr>
+            <tr>
+              <th>Tiempo Integral (Ti) min:</th>
+              <td id="Ti">0.0</td>
+            </tr>
+            <tr>
+              <th>Tiempo Derivativo (Td)</th>
+              <td id="Td">0.0</td>
+            </tr> 
+          </table>
+          <div class="scroll-container">
+            <div class="scroll-content">
+              <label class="input-label">Valor de Entrada</label>
+              <input type="range" min="0" max="10" step="0.01">
+            </div>
+          <label class="output-label">Valor de Salida</label>
+          <input type="text" class="output-text">
+        </div>
+      </form>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
